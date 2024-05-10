@@ -53,3 +53,10 @@ window.onload = function() {
 
 
 }
+document.addEventListener('DOMContentLoaded', function() {
+    var saveBtn = document.getElementById('saveBtn');
+
+    saveBtn.addEventListener('click', function() {
+        chrome.runtime.sendMessage({ task: 'saveFile' });
+    });
+});
