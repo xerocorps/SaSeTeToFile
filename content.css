@@ -3,10 +3,40 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1%;
+  padding: 5px 10px;
+  margin: 10px; /* Add margin here */
   color: white;
-  
-  background:-webkit-gradient(linear, left top, left bottom, from(#2e88c4), to(#075698));
-  border: 1px solid;
-  border-radius: 2px;
+  background: linear-gradient(to bottom, #ff5555, #cc0000);
+  border: 2px solid #cc0000;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: auto;
+  max-width: 50%;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.selection_bubble:hover {
+  background: linear-gradient(to bottom, #ff8888, #cc3333);
+  border-color: #cc3333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.selection_bubble:active {
+  background: linear-gradient(to bottom, #ff3333, #cc0000);
+  border-color: #cc0000;
+  outline: none;
+  box-shadow: none;
+}
+
+.selection_bubble:hover,
+.selection_bubble:active {
+  outline: none;
 }
