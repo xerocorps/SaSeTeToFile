@@ -8,7 +8,12 @@ Save Notes is simple chrome extension that will let you create notes and save im
 ### Installation
 To add this extension to chrome, open below link, once opened click on the button **Add to chrome**  :
 
-[Save-Notes]( https://chrome.google.com/webstore/detail/save-notes/dhngchhcdfdmpbkekjpbophjdfccmlfc )
+- Download Zip File.
+- Extract
+- Open Extensions on Your Browser.
+- Enable Developer Options.
+- click on `Load Unpacked`, select the extracted Folder.
+- Done
 <br/>
 
 ### How to use
@@ -25,14 +30,9 @@ If you are done using the extension, click on its icon, and turn it off using th
 ### Way forward
 If you want to make any tweeks, see the source code attached, and publish your own extension.
 
-### Contribute
-Please contribute by exploring the tool and reporting the bugs or providing suggestions for new features on [Github Issues](https://github.com/Swatikp/save-notes-chrome-extension/issues).
-
 To watch the demo of the project click below:</br></br>
 [![Watch the video](https://raw.githubusercontent.com/Swatikp/save-notes-chrome-extension/master/images/save-notes.png)](https://drive.google.com/file/d/1-BJIwFLqS5S6ViJnOdwoAqBgRtwfB3Yv/view?usp=drivesdk)\
 For more information read my Medium article here :
-
-[Save-Notes-Medium-Article]( https://medium.com/@SwatiKp/my-first-chrome-extension-journey-towards-my-smart-goal-a30ed1885d73 )
 
 ### License
 Apache 2.0
