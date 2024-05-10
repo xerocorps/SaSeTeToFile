@@ -1,17 +1,37 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <script src="popup.js"></script>
     <style>
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px; /* Set width for the popup */
         }
 
-        body {
-            min-width: 300px;
+        h3 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .switch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
         .switch input {
@@ -19,52 +39,48 @@
         }
 
         .slider {
-            position: absolute;
+            position: relative;
             cursor: pointer;
-            top: 14px;
-            left: 0;
-            right: 0;
-            bottom: -1px;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
+            width: 60px;
+            height: 34px;
+            background-color: #ddd;
+            border-radius: 34px;
+            transition: background-color 0.4s;
         }
 
         .slider:before {
-            position: absolute;
             content: "";
-            height: 18px;
-            width: 18px;
+            position: absolute;
             left: 2px;
-            bottom: 1px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
+            bottom: 2px;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.4s;
         }
 
         input:checked+.slider {
-            background-color: #2196F3;
-        }
-
-        input:focus+.slider {
-            box-shadow: 0 0 1px #2196F3;
+            background-color: #4CAF50;
         }
 
         input:checked+.slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
             transform: translateX(26px);
         }
 
-        /* Rounded sliders */
-
-        .slider.round {
-            border-radius: 34px;
-            width: 48px;
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .slider.round:before {
-            border-radius: 50%;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 
@@ -72,11 +88,14 @@
 
 <body>
     <h3>Save Notes</h3>
-    <p>Select text and make notes</p>
-    <label class="switch">
-      <input id="switchval" value="hi"  type="checkbox" >
-      <span class="slider round"></span>
-      </label>
+    <p>Select text anywhere and save Bulleted Points with metadate</p>
+    <div class="switch">
+        <label class="switch">
+            <input id="switchval" value="hi" type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <button id="saveBtn"> Save File</button>
 </body>
 
 </html>
